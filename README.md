@@ -1,29 +1,14 @@
 # VCC Assignment 2 - GCP Managed Instance Group Deployment
+## Infrastructure Deployment Scripts
 
-## Project Overview
-This repository contains configuration details and deployment documentation for creating a Virtual Machine and Managed Instance Group on Google Cloud Platform.
+This repository includes reproducible deployment scripts generated using the Google Cloud Console “Equivalent Code” feature.
 
-## Components Configured
-- VM Instance (e2-micro)
-- Instance Template (vcc-template)
-- Managed Instance Group (vcc-mig)
-- Autoscaling based on CPU Utilization (70%)
-- IAM Role configuration
-- Firewall rules (SSH - TCP 22)
+Scripts:
+- instance_template_deployment.sh
+- mig_creation.sh
+- autoscaler_config.sh
 
-## Region
-us-central1
-
-## Autoscaling Configuration
-Minimum instances: 1
-Maximum instances: 2
-CPU Target Utilization: 70%
-
-## Firewall Rules
-- default-allow-ssh (TCP 22)
-- default-allow-icmp
-- default-allow-internal
-- default-allow-rdp
+These scripts allow full recreation of the Managed Instance Group infrastructure.
 
 ## IAM Configuration
 Principal: m25ai2142@iitj.ac.in
