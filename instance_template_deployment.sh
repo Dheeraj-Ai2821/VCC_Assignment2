@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Instance Template Creation Command
 gcloud beta compute instance-templates create vcc-template-20260301-175950 \
