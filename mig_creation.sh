@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 # Managed Instance Group Creation
 
